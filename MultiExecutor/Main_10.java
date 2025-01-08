@@ -3,10 +3,10 @@ package MultiExecutor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main_10 {
     private final List<Runnable> tasks;
 
-    public Main(List<Runnable> tasks) {
+    public Main_10(List<Runnable> tasks) {
         this.tasks = tasks;
     }
 

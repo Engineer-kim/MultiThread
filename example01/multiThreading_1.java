@@ -1,6 +1,6 @@
 package example01;
 
-public class multiThreading {
+public class multiThreading_1 {
 
 
     public static void main(String[] args) throws InterruptedException {

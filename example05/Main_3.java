@@ -1,7 +1,7 @@
 package example05;
 
 import java.math.BigInteger;
-public class Main2 {
+public class Main_3 {
 
     public static void main(String[] args) {
         Thread thread = new Thread(new LongComputationTask(new BigInteger("200000"), new BigInteger("100000000")));

@@ -2,7 +2,7 @@ package example06;
 
 import java.math.BigInteger;
 
-public class Practice {
+public class Practice_2 {
     public BigInteger calculateResult(BigInteger base1,
                                       BigInteger power1,
                                       BigInteger base2,
@@ -53,7 +53,7 @@ public class Practice {
         }
     }
     public static void main(String[] args) {
-        Practice practice = new Practice();
+        example06.Practice practice = new example06.Practice();
         BigInteger base = BigInteger.valueOf(500);
         BigInteger power = BigInteger.valueOf(30);
         BigInteger result = practice.calculateResult(base, power, base, power);

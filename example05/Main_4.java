@@ -2,7 +2,7 @@ package example05;
 
 import java.math.BigInteger;
 
-public class Main3 {
+public class Main_4 {
 
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new LongComputationTask(new BigInteger("200000"), new BigInteger("100000000")));

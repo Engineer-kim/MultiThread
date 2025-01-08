@@ -9,7 +9,7 @@ import java.util.List;
 //join()은 다른 스레드가 작업을 마칠 때까지 기다리는 "대기실"과 같습니다. 여러 사람이 동시에 작업을 하는데,
 // 한 사람이 다른 사람의 작업 결과가 필요하다면 그 사람이 작업을 끝낼 때까지 기다려야 합니다.
 // 이때 join()을 사용하여 다른 사람(스레드)이 작업을 마칠 때까지 기다리는 것입니다.
-public class Main {
+public class Main_7 {
     public static void main(String[] args) throws InterruptedException {
         List<Long> inputNumbers = Arrays.asList(100000000L, 3435L, 35435L, 2324L, 4656L, 23L, 5556L);
 
