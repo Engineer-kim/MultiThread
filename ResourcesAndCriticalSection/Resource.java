@@ -56,16 +56,25 @@ public class Resource {
     private static class InventoryCounter{
         private int item = 0;
 
-        public void  Increase(){  //synchronized 를 쓰면 쓰레드간 상태 동기화가되기때문에 동일한 값보장 가능 
-            item++;
+        Object lock = new Object();//lock 객체를 획득하여 임계 영역에 있다면, 다른 쓰레드는 lock 획득을 위해 대기
+
+
+        public void  Increase(){  //synchronized 를 쓰면 쓰레드간 상태 동기화가되기때문에 동일한 값보장 가능
+            synchronized (this.lock){
+                item++;
+            }
         }
 
         public void Decrease(){
-            item--;
+            synchronized (this.lock){  //필요한 부분만 동기화할 수 있어 성능을 향상
+                item--;
+            }
         }
 
         public int getItem(){
-            return item;
+            synchronized (this.lock) {
+                return item;
+            }
         }
     }
 }
